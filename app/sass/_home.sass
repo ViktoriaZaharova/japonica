@@ -1,0 +1,318 @@
+@import "vars"
+
+//advantages
+.advantages-box
+  width: 33.3%
+  border: solid 1px #dddddd
+  margin: 0 -1px 0 0
+  padding: 20px 20px 20px 40px
+  color: #414141
+  line-height: 1.06
+  letter-spacing: 1.6px
+  display: flex
+  align-items: center
+
+.advantages
+  .container
+    align-items: stretch
+
+.advantages-box__icon
+  margin: 0 20px 0 0
+  width: 65px
+  min-width: 65px
+  display: flex
+  align-items: center
+  justify-content: center
+
+//.brands
+.brands
+  padding: 0 0 100px
+
+.brands-box
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 99px
+
+  img
+    max-height: 100%
+
+  &:hover
+    background: $red
+
+    img
+      filter: brightness(0) invert(1)
+
+.brands-slider
+  .slick-arrow
+    width: 54px
+    height: 54px
+    border-radius: 50%
+    background: #f2f2f2
+    padding: 12px 17px
+
+
+//main
+.main
+  position: relative
+
+.main-slider__content
+  max-width: 530px
+  width: 100%
+  margin: 0 0 0 125px
+  color: #323232
+
+  span
+    letter-spacing: 2.75px
+    text-transform: uppercase
+    font-family: $arial
+    color: #535353
+
+  .box-text
+    margin: 0 0 37px
+    color: #323232
+    font-family: $arial
+    font-size: 15px
+    max-width: 250px
+    line-height: 1.53
+    letter-spacing: 1.2px
+    width: 100%
+
+    strong
+      font-weight: 700
+
+
+.main-slider__title
+  color: #323232
+  line-height: 1
+  margin: 35px 0 30px
+  font-size: 50px
+  font-weight: 100
+  letter-spacing: 1.75px
+  font-family: $roboto
+
+  strong
+    font-weight: 500
+    display: inline
+
+.main-slider-box
+  padding: 176px 0
+  position: relative
+  overflow: hidden
+
+.main-slider__img
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.main-slider-nav
+  position: absolute
+  max-width: 1530px
+  width: 100%
+  padding: 0 15px
+  margin: 0 auto
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+
+.main-slider
+  .container
+    z-index: 2
+
+//.blog
+.blog-box
+  width: 100%
+  height: 100%
+  position: relative
+  overflow: hidden
+  background: #f1f1f1
+  margin: 0 0 30px
+  color: #444444
+  transition: .3s ease
+
+  &:last-child
+    margin: 0
+
+  &:hover
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.35)
+
+    .blog-box__bg
+      opacity: 1
+
+.blog-box__bg
+  width: 100%
+  height: 100%
+  opacity: .4
+  object-fit: cover
+  transition: .3s ease
+
+.blog-box-min
+  height: 250px
+
+  .blog-box__bg
+    width: auto
+    object-fit: none
+    margin: 0 0 0 -110px
+
+  .blog-box__title
+    font-size: 50px
+
+    strong
+      font-size: 48px
+      display: block
+
+
+.blog-box__content
+  position: absolute
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  justify-content: center
+  text-align: right
+  z-index: 1
+  top: 0
+  left: 0
+  padding: 20px 46px
+
+  strong
+    font-size: 60px
+    text-transform: uppercase
+    font-weight: 900
+
+.blog-box__title
+  font-weight: 100
+  font-size: 40px
+  margin: 16px 0 0
+  line-height: 1
+
+.blog-box__text
+  color: #5e5e5e
+  font-size: 16px
+  letter-spacing: 3.2px
+  text-transform: uppercase
+  font-family: $myriad
+
+//card
+.card
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: calc(100% + 30px)
+    height: calc(100% + 30px)
+    transition: .3s ease
+
+  > *
+    position: relative
+
+  &:hover
+    &:before
+      background: #f5f5f5
+  .button-group
+
+
+.list-rating
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+  li
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 4px 0 0
+    width: 10px
+    height: 10px
+    .svg-icon
+      fill: #afafaf
+
+.list-labels
+  color: #fff
+  letter-spacing: 0.65px
+  font-size: 13px
+  font-weight: 500
+  font-family: $roboto
+  position: absolute
+  top: 10px
+  left: 10px
+  z-index: 1
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    height: 25px
+    padding: 0 8px
+
+.card-category
+  color: #afafaf
+  text-transform: uppercase
+  letter-spacing: 1.73px
+  font-weight: 600
+  font-size: 11.5px
+
+.card-body__wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  margin: 15px 0
+
+.card-title
+  color: #444444
+  font-weight: 600
+  font-size: 13.5px
+  max-width: 190px
+  width: 100%
+
+.basket-btn, .favorite-btn
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 45px
+  height: 45px
+  min-width: 45px
+  padding: 14px
+
+.basket-btn
+  margin: 0 15px 0 0
+  .svg-icon
+    fill: #313537
+
+.favorite-btn
+  .svg-icon
+    fill: #fff
+
+
+//.question
+.panel_heading
+  width: 100%
+  max-width: 991px
+  margin: 0 auto
+  border-top: 1px solid #f0f0f0
+
+  &:last-child
+    border-bottom: 1px solid #f0f0f0
+
+.block_title
+  width: 100%
+  padding: 22px 0
+  letter-spacing: 2.14px
+  font-size: 18px
+  text-transform: uppercase
+  color: #313537
+  cursor: pointer
+
+.block_hover
+  padding: 10px 0
+  display: none
+
+
