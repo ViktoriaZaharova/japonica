@@ -43,13 +43,6 @@
     img
       filter: brightness(0) invert(1)
 
-.brands-slider
-  .slick-arrow
-    width: 54px
-    height: 54px
-    border-radius: 50%
-    background: #f2f2f2
-    padding: 12px 17px
 
 
 //main
@@ -200,24 +193,44 @@
 //card
 .card
   position: relative
+  width: 100%
+  min-height: 550px
   &:before
     content: ''
     position: absolute
     left: 50%
     top: 50%
     transform: translate(-50%, -50%)
-    width: calc(100% + 30px)
-    height: calc(100% + 30px)
+    width: calc(100% + 15px)
+    height: calc(100% + 15px)
     transition: .3s ease
 
   > *
     position: relative
-
+  .button-group
+    display: none
   &:hover
     &:before
       background: #f5f5f5
-  .button-group
+    .button-group
+      display: flex
 
+    .list-rating
+      display: none
+    .card-img
+      background: #fff
+
+.card-img
+  width: 100%
+  height: 358px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto 30px
+  background: #f1f1f1
+  overflow: hidden
+  img
+    max-height: 100%
 
 .list-rating
   display: flex
@@ -231,6 +244,7 @@
     margin: 0 4px 0 0
     width: 10px
     height: 10px
+
     .svg-icon
       fill: #afafaf
 
@@ -247,9 +261,13 @@
   display: flex
   align-items: center
   flex-wrap: wrap
+  line-height: 0.82
   li
     height: 25px
     padding: 0 8px
+    display: flex
+    align-items: center
+
 
 .card-category
   color: #afafaf
@@ -284,6 +302,7 @@
 
 .basket-btn
   margin: 0 15px 0 0
+
   .svg-icon
     fill: #313537
 
@@ -291,6 +310,12 @@
   .svg-icon
     fill: #fff
 
+.hits-slider
+  .slick-slide
+    padding: 15px 0 0
+  .card
+    width: calc(100% - 15px)
+    margin: 0 auto
 
 //.question
 .panel_heading
