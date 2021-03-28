@@ -538,6 +538,95 @@ header .phone {
   height: 27px;
   background: #1f1f1f; }
 
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  max-width: 300px;
+  width: 100%;
+  padding: 30px;
+  overflow-y: auto;
+  height: 100%;
+  background: #323232;
+  z-index: 3;
+  display: none; }
+  .mobile-menu .logo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin: 0 auto 30px; }
+  .mobile-menu .logo-icon {
+    padding: 0;
+    margin: 0 auto 5px;
+    border: none;
+    width: 100%; }
+  .mobile-menu .menu li, .mobile-menu .menu-main li {
+    margin: 0;
+    width: 100%; }
+    .mobile-menu .menu li a, .mobile-menu .menu-main li a {
+      color: #fff; }
+  .mobile-menu .menu-main:before {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    opacity: .5;
+    margin: 20px 0 0; }
+  .mobile-menu .form-search {
+    margin: 0 0 30px; }
+    .mobile-menu .form-search input::-webkit-input-placeholder {
+      color: rgba(255, 255, 255, 0.5); }
+    .mobile-menu .form-search input::-moz-placeholder {
+      color: rgba(255, 255, 255, 0.5); }
+    .mobile-menu .form-search input::-ms-input-placeholder {
+      color: rgba(255, 255, 255, 0.5); }
+    .mobile-menu .form-search input::placeholder {
+      color: rgba(255, 255, 255, 0.5); }
+
+.btn-close {
+  width: 20px;
+  height: 20px;
+  margin: 0 0 30px auto;
+  position: relative; }
+  .btn-close:before, .btn-close:after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #fff; }
+  .btn-close:before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .btn-close:after {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg); }
+
+.btn-burger {
+  width: 20px;
+  height: 16px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .btn-burger span {
+    width: 100%;
+    display: block;
+    height: 2px;
+    background: #fff; }
+
 footer {
   background: #323232;
   color: #bdbdbd;
@@ -1061,12 +1150,56 @@ footer {
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
-  /**/ }
+@media only screen and (max-width: 1720px) {
+  .slick-prev {
+    left: 15px; }
+  .slick-next {
+    right: 15px; } }
 
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 1450px) {
+  .menu li, .menu-main li {
+    margin: 0 40px 0 0; }
+  .header-links {
+    margin: 0 0 0 40px; } }
+
+@media only screen and (max-width: 1300px) {
+  header .phone {
+    margin: 0 0 0 30px; }
+  .header-links {
+    margin: 0 0 0 20px; }
+  .menu li, .menu-main li {
+    margin: 0 30px 0 0; } }
+
+@media only screen and (max-width: 1200px) {
+  .main-slider-box {
+    padding: 120px 0; }
+  header .logo {
+    max-width: 180px;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  header .logo-icon {
+    margin: 0 0 5px;
+    padding: 0;
+    border: none; }
+  .menu-main:before {
+    margin: 0 20px; }
+  .menu li, .menu-main li {
+    margin: 0 15px 0 0; } }
+
 @media only screen and (max-width: 992px) {
-  /**/ }
+  .header-bottom {
+    display: none; }
+  .main-slider__content {
+    margin: 0 0 0 60px; }
+  .phone {
+    font-size: 20px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -1078,25 +1211,4 @@ footer {
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  /**/ }
-
-/*==========  Mobile First  ==========*/
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  /**/ }
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  /**/ }
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /**/ }
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  /**/ }
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
   /**/ }

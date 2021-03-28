@@ -54,3 +54,11 @@ $('.hits-slider').slick({
         '          transform="translate(-1800 -485)"/>\n' +
         '</svg>\n</button>',
 });
+
+// mobile menu
+$('.btn-burger').on('click', function () {
+   $('.mobile-menu').fadeToggle();
+});
+$('.btn-close').on('click', function () {
+    $('.mobile-menu').fadeOut();
+});
