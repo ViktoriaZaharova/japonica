@@ -42,6 +42,33 @@ $('.brands-slider').slick({
         '    <path d="M1821.9,504.731l8.85-9.114A0.945,0.945,0,0,0,1831,495a0.89,0.89,0,0,0-.25-0.623l-8.85-9.114a0.845,0.845,0,0,0-1.22,0,0.9,0.9,0,0,0,0,1.252l7.39,7.606h-27.21a0.886,0.886,0,0,0,0,1.771h27.21l-7.39,7.605a0.924,0.924,0,0,0-.25.623,0.883,0.883,0,0,0,.25.623A0.862,0.862,0,0,0,1821.9,504.731Z"\n' +
         '          transform="translate(-1800 -485)"/>\n' +
         '</svg>\n</button>',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 5,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 4,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 420,
+            settings: {
+                slidesToShow: 2,
+            }
+        }
+
+    ]
 });
 
 $('.hits-slider').slick({
@@ -53,6 +80,33 @@ $('.hits-slider').slick({
         '    <path d="M1821.9,504.731l8.85-9.114A0.945,0.945,0,0,0,1831,495a0.89,0.89,0,0,0-.25-0.623l-8.85-9.114a0.845,0.845,0,0,0-1.22,0,0.9,0.9,0,0,0,0,1.252l7.39,7.606h-27.21a0.886,0.886,0,0,0,0,1.771h27.21l-7.39,7.605a0.924,0.924,0,0,0-.25.623,0.883,0.883,0,0,0,.25.623A0.862,0.862,0,0,0,1821.9,504.731Z"\n' +
         '          transform="translate(-1800 -485)"/>\n' +
         '</svg>\n</button>',
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 4,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+
+    ]
 });
 
 // mobile menu
