@@ -34,7 +34,7 @@ footer
     a
       color: #bdbdbd
       &:hover
-        color: $red
+        color: #fff
 
 
 .footer-box-subscribe
@@ -106,11 +106,39 @@ footer
       height: 34px
       padding: 8px
       &:hover
-        border-color: transparent
-        background: linear-gradient(to top, #cd3aa0, #ff583f, #ffd053)
         .svg-icon
           fill: #fff
       .svg-icon
         fill: #c3c3c3
+        position: relative
+        z-index: 1
 
+.links-ws
+  &:hover
+    border-color: transparent
+    background: #00e676
 
+.links-vk
+  &:hover
+    background: #2787f5
+
+.links-fb
+  &:hover
+    background: #4267b2
+
+.links-yt
+  &:hover
+    background: #ff0202
+
+.links-inst
+  position: relative
+  overflow: hidden
+  &:hover
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: -1px
+      width: 100%
+      height: calc(100% + 2px)
+      background: linear-gradient(to bottom, rgba(205,58,160,1) 0%,rgba(255,88,63,1) 50%,rgba(255,208,83,1) 100%)

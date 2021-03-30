@@ -64,7 +64,7 @@ $('.brands-slider').slick({
         {
             breakpoint: 420,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
             }
         }
 

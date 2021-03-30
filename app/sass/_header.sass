@@ -41,18 +41,45 @@ header
   justify-content: center
   fill: #e8e8e8
   margin: 0 0 0 63px
+  &:hover
+    fill: #fff
 
 .basket-links
   width: 23px
   height: 20px
+  .svg-icon
+    fill: none
+    stroke-opacity: 1
+    stroke-width: 20px
+    stroke: #fff
+  &:hover
+    .svg-icon
+      fill: #fff
 
 .favorite-links
   width: 23px
   height: 20px
+  fill: none
+  stroke: #fff
+  stroke-opacity: 1
+  stroke-width: 20px
+  &:hover
+    fill: $red
+    stroke: $red
+
 
 .cabinet-links
-  width: 17px
+  width: 19px
   height: 20px
+  .svg-icon
+    fill: none
+    stroke-opacity: 1
+    stroke-width: 20px
+    stroke: #fff
+  &:hover
+    .svg-icon
+      fill: #fff
+
 
 .header-bottom
   background: #e8e8e8
@@ -92,16 +119,6 @@ header
       padding: 15.5px 0
       position: relative
       z-index: 1
-
-
-.menu-main
-  &:before
-    content: ''
-    display: inline-block
-    margin: 0 70px
-    width: 1px
-    height: 27px
-    background: #1f1f1f
 
 
 .mobile-menu
