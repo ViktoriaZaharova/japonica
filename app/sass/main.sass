@@ -200,6 +200,10 @@ h2
   width: 33.3%
   padding: 0 15px
 
+.col-50
+  width: 50%
+  padding: 0 15px
+
 .col-20
   width: 20%
   padding: 0 15px
@@ -342,9 +346,60 @@ h2
 .slick-prev
   left: -120px
 
+.breadcrumb
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 14px
+  font-weight: 500
+  color: #afafaf
+  margin: 0 0 50px
+  li
+    a
+      color: #444444
+      &:after
+        content: ''
+        display: inline-block
+        width: 15px
+        height: 9px
+        margin: 0 5px
+        background: url("../img/arrow-right.svg") no-repeat center
+          size: contain
+
+.pagination
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: flex-end
+  li
+    margin: 0 5px 0 0
+    &:last-child
+      margin: 0
+    a
+      width: 34px
+      height: 34px
+      border: 1px solid #cbc6b5
+      background: #fff
+      color: #444444
+      font-weight: 500
+      font-size: 14px
+      display: flex
+      align-items: center
+      justify-content: center
+      .svg-icon
+        width: 5px
+        height: 8px
+      &:hover
+        background: $accent
+        color: #fff
+        fill: #fff
+        border-color: $accent
 
 @import "header"
 @import "footer"
 @import "home"
+@import "page"
 @import "media"
 // Всегда в конце
