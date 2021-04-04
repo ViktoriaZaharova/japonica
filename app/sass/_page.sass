@@ -100,3 +100,155 @@
     font-weight: bold
     max-width: 380px
     margin: 0 0 8px
+
+
+//catalog
+.page-catalog
+  .breadcrumb
+    margin: 10px 0 40px
+
+.page-catalog-wrapper
+  width: calc(100% - 266px)
+  padding: 0 0 0 40px
+
+.sidebar
+  width: 266px
+
+.sorting-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 0 0 40px
+  .pagination
+    width: auto
+
+
+.sorting-box
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 14px
+  font-weight: 500
+
+.sorting-list
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 0 15px
+  li
+    margin: 0 15px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: #afafaf
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      &:hover
+        color: #444444
+    .active
+      color: #444444
+
+      &:after
+        content: ''
+        display: inline-block
+        width: 10px
+        height: 15px
+        margin: 0 0 0 9px
+        background: url("../img/up-arrow.svg") no-repeat center
+          size: contain
+
+.sidebar-wrapper
+
+  .panel_heading
+    border: none
+    margin: 0 0 40px
+
+    &:last-child
+      margin: 0
+  .block_title
+    padding: 0 0 20px
+    border-bottom: 2px solid #444444
+    font-size: 16px
+    font-weight: 500
+    display: flex
+    align-items: center
+    &:after
+      content: ''
+      display: inline-block
+      margin: 0 0 0 auto
+      width: 19px
+      height: 12px
+      background: url('../img/menu.svg') no-repeat center
+        size: contain
+  .block_hover
+    padding: 0
+
+.checkbox
+  width: 100%
+  display: flex
+  align-items: center
+  color: #444444
+  font-size: 15px
+  font-family: $default-font
+  cursor: pointer
+
+.checkbox-inp
+  display: none
+
+.checkbox-custom
+  width: 17px
+  height: 17px
+  min-width: 17px
+  margin: 0 14px 0 0
+  border: 1px solid #e8e8e8
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 12px
+    height: 9px
+  
+.checkbox-inp:checked + .checkbox-custom
+  background: #323232
+  border-color: #323232
+  &:before
+    background: url("../img/checkbox.svg") no-repeat center
+      size: contain
+
+
+.list-checkbox
+  width: 100%
+  li
+    width: 100%
+    padding: 13px
+    border-bottom: 1px solid #e8e8e8
+
+.btn-filter
+  display: none
+  align-items: center
+  justify-content: center
+  text-align: center
+  border: 1px solid #cbc6b5
+  height: 34px
+  padding: 0 20px
+  cursor: pointer
+
+.btn-filter-icon
+  width: 20px
+  height: 20px
+  margin: 0 10px 0 0
+  display: flex
+  align-items: center
+  justify-content: center
+  fill: #323232
+
+.sidebar-close
+  display: none
+  &:before, &:after
+    background: $accent

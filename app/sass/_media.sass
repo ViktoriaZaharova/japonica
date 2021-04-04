@@ -90,6 +90,20 @@
   .hits-slider .slick-arrow
     top: 30%
 
+  .sidebar
+    width: 220px
+
+  .page-catalog-wrapper
+    width: calc(100% - 220px)
+    padding: 0 0 0 20px
+
+  .col-25
+    width: 33.3%
+
+  .page-catalog
+    .card
+      min-height: 470px
+
 @media only screen and (max-width: 992px)
   .header-bottom
     display: none
@@ -143,6 +157,39 @@
 
   .footer-bottom
     padding: 15px 0
+
+  .sidebar-wrapper
+    display: none
+    position: fixed
+    left: 0
+    top: 0
+    max-width: 300px
+    width: 100%
+    background: #fff
+    padding: 30px
+    overflow-y: auto
+    height: 100%
+    z-index: 2
+
+  .sidebar-close
+    display: flex
+
+  .btn-filter
+    display: flex
+
+  .sidebar
+    width: 100%
+
+  .page-catalog
+    .breadcrumb
+      margin: 0 0 30px
+
+  .page-catalog-wrapper
+    width: 100%
+    padding: 0
+
+  .sorting-wrapper
+    margin: 0 0 20px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 900px)
@@ -238,6 +285,15 @@
   .article-img
     margin: 0 0 20px
 
+  .col-25
+    width: 50%
+
+  .sorting-list li
+    margin: 0 10px 0 0
+
+  .sorting-box
+    width: 100%
+    margin: 0 0 10px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
@@ -306,6 +362,7 @@
 
   .card .button-group
     display: flex
+    margin: 10px 0 0
 
   .col-50
     width: 100%
@@ -319,6 +376,10 @@
 
   .blog-card__body
     padding: 10px 0 0
+
+  .page-catalog .card
+    height: 100%
+    min-height: auto
 
 
 
@@ -334,6 +395,20 @@
         margin: 0 0 10px
         max-width: 200px
         width: 100%
+
+  .sorting-list
+    margin: 5px 0 0
+
+  .btn-filter
+    width: 100%
+    margin: 0 0 5px
+
+  .sorting-wrapper
+    .pagination
+      order: 1
+
+  .col-25
+    width: 100%
 
 @media only screen and (max-width: 420px)
   header

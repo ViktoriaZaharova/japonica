@@ -9,7 +9,7 @@ function accordeon() {
     var panel = $('.panel_heading');
 
     if (panel.hasClass('in')) {
-        $('.in').find('.block_hover').slideDown();
+        $('.in').find('.block_hover').css('display', 'block');
     }
 
     $('.panel_heading .block_title').on('click', function () {
@@ -115,4 +115,11 @@ $('.btn-burger').on('click', function () {
 });
 $('.btn-close').on('click', function () {
     $('.mobile-menu').fadeOut();
+});
+
+$('.btn-filter').on('click', function () {
+    $('.sidebar-wrapper').fadeToggle();
+});
+$('.sidebar-close').on('click', function () {
+    $('.sidebar-wrapper').fadeOut();
 });
