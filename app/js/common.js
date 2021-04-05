@@ -205,10 +205,20 @@ $('.up').on("click",function () {
     return false;
 });
 
-$(".form-reviews input, .form-reviews textarea").focus(function () {
+$(".form input, .form textarea").focus(function () {
     $(this).parent().addClass("focus");
 }).blur(function () {
     if ($(this).val() === '') {
         $(this).parent().removeClass("focus");
     }
 });
+
+// активная ссылка меню
+$('.menu-cabinet li a').each(function () {
+    var location = window.location.href;
+    var link = this.href;
+    if (location === link) {
+        $(this).addClass('active');
+    }
+});
+// end

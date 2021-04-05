@@ -2088,7 +2088,10 @@ footer {
 .focus .input-form-text {
   display: none; }
 
-.form-reviews {
+.form-reviews label {
+  max-width: 48%; }
+
+.form {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2101,44 +2104,43 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .form-reviews .btn {
+  .form .btn {
     font-size: 14.5px;
     font-family: "gilroy", sans-serif;
     height: 40px;
     padding: 0 26px;
     letter-spacing: 2.18px; }
-  .form-reviews label {
-    max-width: 48%;
+  .form label {
     margin: 0 0 20px;
     position: relative; }
-  .form-reviews input {
+  .form input {
     border-radius: 0;
     border: 1px solid #f4f4f4;
     height: 40px;
     color: #5f5f5f;
     padding: 0 16px; }
-    .form-reviews input::-webkit-input-placeholder {
+    .form input::-webkit-input-placeholder {
       color: #5f5f5f; }
-    .form-reviews input::-moz-placeholder {
+    .form input::-moz-placeholder {
       color: #5f5f5f; }
-    .form-reviews input::-ms-input-placeholder {
+    .form input::-ms-input-placeholder {
       color: #5f5f5f; }
-    .form-reviews input::placeholder {
+    .form input::placeholder {
       color: #5f5f5f; }
-  .form-reviews textarea {
+  .form textarea {
     border: 1px solid #f4f4f4;
     height: 120px;
     padding: 15px 16px;
     color: #5f5f5f; }
-    .form-reviews textarea::-webkit-input-placeholder {
+    .form textarea::-webkit-input-placeholder {
       color: #5f5f5f; }
-    .form-reviews textarea::-moz-placeholder {
+    .form textarea::-moz-placeholder {
       color: #5f5f5f; }
-    .form-reviews textarea::-ms-input-placeholder {
+    .form textarea::-ms-input-placeholder {
       color: #5f5f5f; }
-    .form-reviews textarea::placeholder {
+    .form textarea::placeholder {
       color: #5f5f5f; }
-  .form-reviews .label-message {
+  .form .label-message {
     max-width: none; }
 
 sup {
@@ -2170,6 +2172,259 @@ sup {
       cursor: pointer; }
       .add-rating .list-rating li .svg-icon {
         fill: #5f5f5f; }
+
+.links-grey {
+  display: inline-block;
+  color: #bcbcbc; }
+  .links-grey:hover {
+    color: #e33434; }
+
+.font-bold {
+  font-weight: bold; }
+
+.page-registration h1 {
+  text-transform: uppercase;
+  margin: 0 0 38px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "gilroy", sans-serif;
+  letter-spacing: 1.8px;
+  color: #444; }
+
+.form-registration {
+  max-width: 935px;
+  width: 100%; }
+  .form-registration .btn {
+    height: 44px; }
+
+.form-footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0 0; }
+  .form-footer p {
+    color: #bcbcbc;
+    font-weight: 500; }
+
+.form-col {
+  max-width: 447px;
+  width: 100%; }
+
+.input-title {
+  margin: 0 0 9px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444444;
+  display: block;
+  width: 100%; }
+
+.form-login {
+  max-width: 725px; }
+  .form-login p {
+    margin: 40px 0 0;
+    width: 100%;
+    color: #bcbcbc; }
+
+.page-cabinet {
+  color: #444; }
+  .page-cabinet h1 {
+    text-transform: uppercase;
+    margin: 0 0 39px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444444;
+    letter-spacing: 1.8px;
+    font-family: "gilroy", sans-serif; }
+  .page-cabinet .wrapper {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+
+.sidebar-cabinet {
+  width: 245px;
+  padding: 0 41px 0 0;
+  border-right: 1px solid #e8e8e8; }
+  .sidebar-cabinet h2 {
+    text-align: left;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 0 20px;
+    letter-spacing: 1.28px;
+    color: #444;
+    border-bottom: 2px solid #444; }
+
+.menu-cabinet {
+  font-size: 15px; }
+  .menu-cabinet li {
+    border-bottom: 1px solid #e8e8e8; }
+    .menu-cabinet li a {
+      width: 100%;
+      padding: 14px 0;
+      color: #444444; }
+      .menu-cabinet li a:hover {
+        color: #e33434; }
+    .menu-cabinet li .active {
+      font-weight: 500; }
+
+.cabinet-content {
+  width: calc(100% - 245px);
+  padding: 0 0 0 41px;
+  font-size: 15px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.partner-bonus {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 20px; }
+  .partner-bonus span {
+    font-weight: bold;
+    margin: 0 0 0 5px; }
+
+.bonus-info-text {
+  margin: 20px 0 0;
+  color: #afafaf; }
+
+.partner-bonus-list {
+  width: 100%;
+  font-weight: 500; }
+  .partner-bonus-list li {
+    margin: 0 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .partner-bonus-list li p {
+      margin: 0 5px 0 0; }
+    .partner-bonus-list li:last-child {
+      margin: 0; }
+
+.table {
+  width: 100%;
+  max-width: 957px;
+  font-size: 15px;
+  font-weight: normal; }
+
+.tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 17px 0; }
+  .tr:first-child {
+    padding-top: 0; }
+
+.td {
+  width: 14%; }
+
+.td-number {
+  font-weight: bold;
+  width: 30%;
+  text-align: right;
+  margin: 0 0 0 auto; }
+
+.td-date {
+  font-weight: 500;
+  width: 14%; }
+
+.profile-box {
+  width: 40%;
+  padding: 0 80px 0 0; }
+  .profile-box h1 {
+    margin: 0 0 20px; }
+
+.profile-box-initials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 35px;
+  background: #e8e8e8;
+  width: 121px;
+  height: 121px;
+  font-size: 45px;
+  font-weight: bold; }
+
+.list-info-profile {
+  font-size: 15px; }
+  .list-info-profile li {
+    margin: 0 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .list-info-profile li p {
+      margin: 0 10px 0 0;
+      font-weight: bold; }
+    .list-info-profile li:last-child {
+      margin: 0; }
+
+.form-data {
+  width: 60%;
+  padding: 42px 0 0 80px;
+  border-left: 1px solid #e8e8e8; }
+  .form-data label {
+    margin: 0;
+    width: calc(100% - 123px); }
+  .form-data .input-title {
+    min-width: 123px;
+    width: auto;
+    margin: 0;
+    color: #bcbcbc; }
+  .form-data .input-text {
+    color: #bcbcbc; }
+  .form-data .btn {
+    margin: 20px 0 0 auto; }
+
+.form-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 20px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -2300,7 +2555,22 @@ sup {
   .reviews-product-box__content {
     padding: 0 0 0 20px; }
   .reviews-product__list .btn-load {
-    margin: 0 0 0 95px; } }
+    margin: 0 0 0 95px; }
+  .form-data {
+    padding-left: 20px; }
+  .profile-box {
+    padding-right: 20px; } }
+
+@media only screen and (max-width: 1100px) {
+  .form-data {
+    width: 100%;
+    padding: 20px 0 0;
+    margin: 30px 0 0;
+    border: none;
+      border-top: 1px solid #e8e8e8; }
+  .profile-box {
+    width: 100%;
+    padding: 0; } }
 
 @media only screen and (max-width: 992px) {
   .header-bottom {
@@ -2433,7 +2703,11 @@ sup {
     width: 100%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
-            order: 1; } }
+            order: 1; }
+  .form-col {
+    max-width: 48%; }
+  .td, .td-date {
+    width: 20%; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 900px) {
@@ -2525,7 +2799,20 @@ sup {
   .tabs__caption {
     font-size: 13px; }
     .tabs__caption li {
-      margin-right: 15px; } }
+      margin-right: 15px; }
+  .page-cabinet h1 {
+    font-size: 18px;
+    margin: 0 0 20px; }
+  .cabinet-content {
+    width: 100%;
+    padding: 0; }
+  .sidebar-cabinet {
+    padding: 0;
+    width: 100%;
+    margin: 0 0 30px;
+    border: none; }
+    .sidebar-cabinet h2 {
+      padding: 0 0 10px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -2604,7 +2891,21 @@ sup {
     width: 40px;
     height: 40px; }
   .description-product {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .form-col {
+    max-width: none; }
+  .form-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .form-registration .btn {
+    margin: 0 auto 10px; }
+  .page-registration h1 {
+    font-size: 18px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 480px) {
@@ -2653,7 +2954,19 @@ sup {
   .reviews-product-box__photo {
     margin: 0 auto 20px; }
   .reviews-product__list .btn-load {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .td-number {
+    width: 100%;
+    margin: 10px 0 0;
+    text-align: center; }
+  .td, .td-date {
+    width: 33.3%;
+    text-align: center; }
+  .form-data .input-title {
+    width: 100%;
+    margin: 0 0 5px; }
+  .form-data label {
+    width: 100%; } }
 
 @media only screen and (max-width: 420px) {
   header .phone-text {
