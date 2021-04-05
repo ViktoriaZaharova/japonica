@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+  <meta charset="utf-8">
+  <title>JAPONICA</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+  <a href="index.html" class="logo"><span class="logo-icon"><img src="img/logo.png" alt=""></span><span
+      class="logo-text">Японская косметика и бытовая химия</span></a>
+
+  <form method="post" class="form-search">
+    <label><input type="text" placeholder="Поиск" required name="search"></label>
+    <button type="submit">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#search"></use>
+      </svg>
+    </button>
+  </form>
+
+  <ul class="menu">
+    <li><a href="#">УХОД ЗА ВОЛОСАМИ</a></li>
+    <li><a href="#">УХОД ЗА ЛИЦОМ</a></li>
+    <li><a href="#">УХОД ЗА ПОЛОСТЬЮ РТА</a></li>
+    <li><a href="#">УХОД ЗА ТЕЛОМ</a></li>
+    <li><a href="#">КОЛГОТКИ</a></li>
+    <li><a href="#">ТОВАРЫ ДЛЯ ДОМА</a></li>
+  </ul>
+
+  <ul class="menu-main">
+    <li><a href="#">АКЦИИ</a></li>
+    <li><a href="#">КАТАЛОГ</a></li>
+  </ul>
+</div>
+
+<header>
+  <div class="header-top">
+    <div class="container">
+      <a href="index.html" class="logo"><span class="logo-icon"><img src="img/logo.png" alt=""></span><span
+          class="logo-text">Японская косметика и бытовая химия</span></a>
+
+      <form method="post" class="form-search">
+        <label><input type="text" placeholder="Поиск" required name="search"></label>
+        <button type="submit">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+      <div class="header-box">
+        <a href="#" class="header-links favorite-links">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#favorites2"></use>
+          </svg>
+        </a>
+        <a href="#" class="header-links cabinet-links">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#user2"></use>
+          </svg>
+        </a>
+        <a href="#" class="header-links basket-links">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#basket2"></use>
+          </svg>
+        </a>
+      </div>
+      <a href="tel:+78003336205" class="phone">
+        <span class="phone-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#phone"></use></svg></span>
+        <span class="phone-text">8 800 333 62 05</span>
+      </a>
+      <div class="btn-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <div class="container">
+      <ul class="menu">
+        <li><a href="#">УХОД ЗА ВОЛОСАМИ</a></li>
+        <li><a href="#">УХОД ЗА ЛИЦОМ</a></li>
+        <li><a href="#">УХОД ЗА ПОЛОСТЬЮ РТА</a></li>
+        <li><a href="#">УХОД ЗА ТЕЛОМ</a></li>
+        <li><a href="#">КОЛГОТКИ</a></li>
+        <li><a href="#">ТОВАРЫ ДЛЯ ДОМА</a></li>
+      </ul>
+
+      <ul class="menu-main">
+        <li><a href="#">АКЦИИ</a></li>
+        <li><a href="#">КАТАЛОГ</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="page page-basket">
+  <div class="container">
+    <ul class="breadcrumb">
+      <li><a href="index.html">Главная</a></li>
+      <li><span>Корзина</span></li>
+    </ul>
+
+    <div class="delivery-line">
+      <p>Доставка за наш счет!</p>
+    </div>
+
+    <form method="post" class="checkout-form form">
+      <table class="table-basket">
+        <thead class="table-head">
+        <tr class="table-basket-tr">
+          <td class="table-basket-td">НАИМЕНОВАНИЯ ТОВАРА</td>
+          <td class="table-basket-td">ЦЕНА ЗА ШТ.</td>
+          <td class="table-basket-td">КОЛИЧЕСТВО</td>
+          <td class="table-basket-td">СУММА</td>
+          <td class="table-basket-td"></td>
+        </tr>
+        </thead>
+
+        <tbody class="table-body">
+        <tr class="table-basket-tr">
+          <td class="table-basket-td">
+            <div class="product-basket">
+              <a href="#" class="product-basket__img"><img src="img/product11.png" alt=""></a>
+              <div class="product-basket__content">
+                <a href="#" class="product-basket__name">Moist Diane Perfect Beauty Extra
+                  Шампунь Восстановление</a>
+                <ul class="list-characteristics">
+                  <li><p>Артикул:</p><span>01003</span></li>
+                  <li><p>Количество:</p><span>30 шт</span></li>
+                </ul>
+              </div>
+            </div>
+          </td>
+          <td class="table-basket-td">
+            <div class="sum">899 ₽</div>
+          </td>
+          <td class="table-basket-td">
+            <div class="amount">
+              <span class="up"><img src="img/up-arrow2.svg" alt=""></span>
+              <input type="text" value="1"/>
+              <span class="down"><img src="img/down-arrow.svg" alt=""></span>
+            </div>
+          </td>
+          <td class="table-basket-td">
+            <div class="sum">899 ₽</div>
+          </td>
+          <td class="table-basket-td">
+            <a href="#" class="btn-delete">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+
+      <div class="table-total">
+        <div class="promo-code-item">
+          <p>Промокод:</p>
+          <label><input type="text" name="code"></label>
+
+          <a href="#" class="btn btn-black">ПРИМЕНИТЬ</a>
+
+          <a href="#" class="btn btn-grey btn-click">КУПИТЬ В 1 КЛИК</a>
+        </div>
+
+        <div class="total-sum">
+          <p>ТОВАРЫ НА СУММУ: <span>899 ₽</span></p>
+        </div>
+      </div>
+
+      <div class="checkout-wrapper">
+        <div class="checkout-box">
+          <div class="checkout-box-step">
+            <h3>1. КОНТАКТНЫЕ ДАННЫЕ</h3>
+            <div class="form-col">
+              <label>
+                <span class="input-title"><sup>*</sup> Имя</span>
+                <input type="text" name="name" required>
+              </label>
+              <label>
+                <span class="input-title"><sup>*</sup> Телефон</span>
+                <input type="text" name="phone" required>
+              </label>
+              <label>
+                <span class="input-title"><sup>*</sup> E-mail</span>
+                <input type="text" name="mail" required>
+              </label>
+            </div>
+
+            <div class="form-col">
+              <label>
+                <span class="input-title"><sup>*</sup> Город</span>
+                <input type="text" name="city" required>
+              </label>
+              <label>
+                <span class="input-title"><sup>*</sup> Адрес</span>
+                <input type="text" name="address" required>
+              </label>
+              <label>
+                <span class="input-title"><sup>*</sup> Индекс</span>
+                <input type="text" name="index_inp" required>
+              </label>
+            </div>
+            <ul class="list-checkbox">
+              <li>
+                <label class="checkbox">
+                  <input class="checkbox-inp" type="checkbox" name="checkbox">
+                  <span class="checkbox-custom"></span>
+                  <span class="label">Сохранить мои данные и зарегистрировать как постоянного покупателя.</span>
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input class="checkbox-inp" type="checkbox" name="checkbox" checked>
+                  <span class="checkbox-custom"></span>
+                  <span class="label">Я принимаю условия и даю согласие на обработку персональных данных.</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="checkout-box">
+          <div class="checkout-box-step">
+            <h3>2. ВЫБЕРИТЕ СПОСОБ ДОСТАВКИ</h3>
+            <ul class="list-checkbox">
+              <li>
+                <label class="radio">
+                  <input class="radio-inp" type="radio" name="radio">
+                  <span class="radio-custom"></span>
+                  <span class="label">Курьером</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="radio">
+                  <input class="radio-inp" type="radio" name="radio" checked>
+                  <span class="radio-custom"></span>
+                  <span class="label">Курьером</span>
+                </label>
+              </li>
+              <li>
+                <label class="label-select">
+                  <select name="select" class="select">
+                    <option value="Люберцы Волковская ул д.2 корпус Б оф. С-07а (0 руб.)">Люберцы Волковская ул д.2 корпус Б оф. С-07а (0 руб.)</option>
+                    <option value="Люберцы Волковская ул д.2 корпус Б оф. С-07а (0 руб.)">Люберцы Волковская ул д.2 корпус Б оф. С-07а (0 руб.)</option>
+                    <option value="Люберцы Волковская ул д.2 корпус Б оф. С-07а (0 руб.)">Люберцы Волковская ул д.2 корпус Б оф. С-07а (0 руб.)</option>
+                  </select>
+                </label>
+              </li>
+
+              <li>
+                <label class="radio">
+                  <input class="radio-inp" type="radio" name="radio">
+                  <span class="radio-custom"></span>
+                  <span class="label">Почтой</span>
+                </label>
+              </li>
+            </ul>
+
+          </div>
+          <div class="checkout-box-step">
+            <h3>3. ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ</h3>
+            <ul class="list-checkbox">
+              <li>
+                <label class="radio">
+                  <input class="radio-inp" type="radio" name="radio2">
+                  <span class="radio-custom"></span>
+                  <span class="label">Наличными</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="radio">
+                  <input class="radio-inp" type="radio" name="radio2" checked>
+                  <span class="radio-custom"></span>
+                  <span class="label">Картой</span>
+                </label>
+              </li>
+              <li>
+                <label class="label-select">
+                  <select name="select" class="select">
+                    <option value="Оплата картами Visa, Mastercard, Мир">Оплата картами Visa, Mastercard, Мир</option>
+                    <option value="Оплата картами Visa, Mastercard, Мир">Оплата картами Visa, Mastercard, Мир</option>
+                    <option value="Оплата картами Visa, Mastercard, Мир">Оплата картами Visa, Mastercard, Мир</option>
+                  </select>
+                </label>
+              </li>
+
+              <li>
+                <label class="radio">
+                  <input class="radio-inp" type="radio" name="radio2">
+                  <span class="radio-custom"></span>
+                  <span class="label">Электронными деньгами</span>
+                </label>
+              </li>
+              <li>
+                <label class="radio">
+                  <input class="radio-inp" type="radio" name="radio2">
+                  <span class="radio-custom"></span>
+                  <span class="label">Другие способы оплаты</span>
+                </label>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="checkout-form-bottom">
+        <div class="checkout-form-comment">
+          <label>
+            <input type="text" placeholder="Комментарий к заказу" name="comment">
+          </label>
+          <p>Если у вас возникли проблемы с оформлением заказа, позвоните нам на <span>8 800 333-62-05</span></p>
+        </div>
+
+        <div class="total-order">
+          <p>1 товар на сумму: 899 ₽</p>
+          <p>Бесплатная доставка</p>
+          <p>К ОПЛАТЕ: <strong>899 ₽</strong></p>
+        </div>
+      </div>
+
+      <div class="form-footer">
+        <a href="#" class="btn btn-grey">ВЕРНУТЬСЯ НАЗАД</a>
+        <a href="#" class="btn btn-black">ОФОРМИТЬ ЗАКАЗ</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-box">
+        <h3>О компании</h3>
+        <ul class="footer-menu">
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Оплата</a></li>
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Политика конфиденциальности</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h3>Каталог</h3>
+        <ul class="footer-menu">
+          <li><a href="#">Уход за волосами</a></li>
+          <li><a href="#">Уход за лицом</a></li>
+          <li><a href="#">Уход за полостью рта</a></li>
+          <li><a href="#">Уход за телом</a></li>
+          <li><a href="#">Колготки</a></li>
+          <li><a href="#">Товары для дома</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box footer-box-subscribe">
+        <h3>ПОДПИСАТЬСЯ НА РАССЫЛКУ</h3>
+        <p>Подпишись на рассылку и получи
+          <strong>скидку 10%</strong> на новый заказ</p>
+        <form method="post" class="form-subscribe">
+          <label><input type="text" placeholder="Введите Ваш e-mail" name="mail"></label>
+          <button>
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </button>
+        </form>
+
+        <ul class="footer-menu">
+          <li><a href="#">Japonica Blog</a></li>
+          <li><a href="#">Japonica.ru - для b2b клиентов</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box footer-box-contacts">
+        <a href="tel:+78003336205" class="phone">+7 800 333 62 05</a>
+        <a href="tel:+74953336205" class="phone">+7 495 333 62 05</a>
+        <p>с 09:00 до 18:00, без выходных</p>
+
+        <a href="#" class="btn-top-scroll">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#up"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="copyright">
+        <p>© 2014 - 2021 ООО «Осака»</p>
+        <span>Все права защищены.</span>
+      </div>
+
+      <ul class="list-social">
+        <li>
+          <a href="#" class="links-ws">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#whatsapp"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="links-inst">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="links-vk">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="links-fb">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="links-yt">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

@@ -221,6 +221,32 @@
     background: url("../img/checkbox.svg") no-repeat center
       size: contain
 
+.radio
+  width: 100%
+  display: flex
+  align-items: center
+  color: #444444
+  font-size: 14px
+  font-family: $default-font
+  cursor: pointer
+
+.radio-inp
+  display: none
+
+.radio-custom
+  width: 17px
+  height: 17px
+  min-width: 17px
+  margin: 0 14px 0 0
+  border: solid 1px #d1d1d1
+    radius: 50%
+  position: relative
+  background: #fff
+
+.radio-inp:checked + .radio-custom
+  background: #fff
+  border: 5px solid #444
+
 
 .list-checkbox
   width: 100%

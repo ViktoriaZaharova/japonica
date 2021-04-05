@@ -1,0 +1,216 @@
+@import "vars"
+
+.delivery-line
+  width: 100%
+  background: #c5ecab
+  padding: 15px 18px
+  font-size: 16px
+  font-weight: bold
+  color: #333333
+  margin: 0 0 23px
+
+.checkout-form
+  width: 100%
+
+.table-basket
+  font-size: 14px
+  font-weight: 500
+  width: 100%
+
+  td
+    vertical-align: middle
+
+  thead
+    border: solid 1px #dddddd
+    letter-spacing: 1.68px
+    text-align: center
+
+    td
+      padding: 23px 0
+
+  .amount
+    input
+      width: 95px
+      height: 35px
+      border: solid 1px #444444
+      color: #444
+      font-size: 16px
+
+      &::placeholder
+        color: #444
+
+  tbody
+    td
+      border-right: 1px solid #dddddd
+      padding: 25px 30px
+
+
+.table-basket-tr
+  border: 1px solid #dddddd
+
+.btn-delete
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 10px
+  height: 10px
+  fill: #444444
+  margin: 0 auto
+
+.sum
+  text-align: center
+  font-size: 18px
+  font-weight: 900
+
+.product-basket
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: flex-start
+
+.product-basket__img
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 172px
+  height: 200px
+  background: #f1f1f1
+
+  img
+    max-height: 100%
+
+.product-basket__content
+  width: calc(100% - 172px)
+  padding: 0 0 0 40px
+
+  .list-characteristics
+    font-size: 14px
+
+    li
+      margin: 0 0 5px
+
+.product-basket__name
+  font-size: 18px
+  font-weight: bold
+  color: #444
+  max-width: 275px
+  width: 100%
+  margin: 0 0 16px
+
+.table-total
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  padding: 22px 0
+  border-bottom: 1px solid #dddddd
+  margin: 0 0 36px
+
+.total-sum
+  display: flex
+  align-items: center
+  font-size: 18.5px
+  font-weight: bold
+  color: #bcbcbc
+
+
+  span
+    color: #1f1f1f
+    display: inline-block
+    margin: 0 0 0 5px
+
+.promo-code-item
+  display: flex
+  align-items: center
+  margin: 0 auto 0 0
+  p
+    letter-spacing: 1.74px
+    text-transform: uppercase
+    color: #1f1f1f
+    font-size: 14.5px
+  label
+    margin: 0 0 0 20px
+    width: 323px
+
+  .btn
+    margin: 0 0 0 10px
+    white-space: nowrap
+
+.checkout-form-bottom
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 39px 0 0
+
+.checkout-form-comment
+  max-width: 669px
+  width: 100%
+  p
+    font-size: 14px
+    font-weight: 500
+    span
+      font-size: 18px
+
+.total-order
+  text-align: right
+  font-size: 18.5px
+  font-weight: 500
+  color: #bcbcbc
+  p
+    margin: 0 0 15px
+    &:last-child
+      margin: 0
+  strong
+    font-weight: bold
+    color: #1f1f1f
+
+.checkout-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 0 0 20px
+  border-bottom: 1px solid #dddddd
+  h3
+    margin: 0 0 15px
+    width: 100%
+    color: #1f1f1f
+    text-transform: uppercase
+    letter-spacing: 2.22px
+    font-size: 18.5px
+    font-weight: bold
+
+.checkout-box
+  width: 48%
+  .list-checkbox
+    li
+      border: none
+      padding: 0
+
+.checkout-box-step
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+
+.form-col
+  width: 48%
+
+.label-select
+  max-width: 444px
+
+.select
+  height: 40px
+  padding: 0 20px 0 15px
+  color: #5a5a5a
+  font-size: 14px
+  font-weight: 500
+  font-family: $default-font
+  background: #fff url("../img/down-arrow2.svg") no-repeat 97% center
+    size: 9px
+
