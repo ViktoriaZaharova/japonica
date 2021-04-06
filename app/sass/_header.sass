@@ -62,6 +62,33 @@ header
   right: -12px
   line-height: 1.21
 
+.header-links-wrapper
+  position: relative
+
+.dropdown-menu
+  position: absolute
+  width: 210px
+  top: calc(100% + 40px)
+  left: calc(50% + 20px)
+  transform: translate(-50%,0)
+  background: #fff
+  z-index: 2
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.35)
+  display: none
+
+.dropdown-menu__links
+  width: 100%
+  text-align: center
+  padding: 15px 0
+  letter-spacing: 1.2px
+  font-size: 12px
+  color: #1f1f1f
+  border:
+    bottom: solid 2px #f3f3f3
+  &:last-child
+    border: none
+  &:hover
+    color: $red
 
 .basket-links
   width: 23px
@@ -99,6 +126,9 @@ header
     .svg-icon
       fill: #fff
 
+.cabinet-links.active
+  .svg-icon
+    fill: #fff
 
 .header-bottom
   background: #e8e8e8

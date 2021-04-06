@@ -173,6 +173,9 @@
   .promo-code-item label
     width: 220px
 
+  .dropdown-menu
+    top: calc(100% + 51px)
+
 @media only screen and (max-width: 1100px)
   .form-data
     width: 100%
@@ -550,13 +553,19 @@
     .btn
       margin: 0 auto
 
+  .dropdown-menu
+    top: calc(100% + 30px)
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
   header .logo
     max-width: 110px
 
-  header .phone, .header-links
+  header .phone, .header-links, .header-links-wrapper
     margin: 0 0 0 10px
+
+  .dropdown-menu
+    top: calc(100% + 26px)
 
   .header-links
     &:first-child

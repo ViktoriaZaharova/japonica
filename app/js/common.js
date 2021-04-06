@@ -222,3 +222,8 @@ $('.menu-cabinet li a').each(function () {
     }
 });
 // end
+
+$('.cabinet-links').on('click', function (e) {
+    e.preventDefault();
+    $(this).toggleClass('active').siblings('.dropdown-menu').fadeToggle();
+});
