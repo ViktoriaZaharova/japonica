@@ -112,6 +112,7 @@ $('.hits-slider').slick({
 $('.product-slider-preview').slick({
     slidesToShow: 4,
     vertical: true,
+    // infinite: false,
     prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="20" viewBox="0 0 31 20">\n' +
         '  <path d="M99.1,504.731l-8.848-9.114A0.906,0.906,0,0,1,90,495a0.87,0.87,0,0,1,.255-0.623l8.848-9.114a0.84,0.84,0,0,1,1.216,0,0.9,0.9,0,0,1,0,1.252l-7.384,7.606H120.14a0.886,0.886,0,0,1,0,1.771H92.934l7.384,7.605a0.9,0.9,0,0,1,.255.623,0.879,0.879,0,0,1-.255.623A0.856,0.856,0,0,1,99.1,504.731Z" transform="translate(-90 -485)"/>\n' +
         '</svg>\n</button>',
@@ -158,6 +159,7 @@ $('.product-slider').slick({
    slidesToShow: 1,
    arrows: false,
    fade: true,
+    // infinite: false,
    asNavFor: '.product-slider-preview'
 });
 
