@@ -124,6 +124,32 @@
   height: 121px
   font-size: 45px
   font-weight: bold
+  &:hover
+    background: #444
+    .text
+      display: none
+    .label-file
+      display: flex
+
+.label-file
+  display: none
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 100%
+  cursor: pointer
+  transition: .3s ease
+
+.input-file
+  display: none
+
+.label-file-icon
+  fill: #fff
+  width: 55px
+  height: 43px
+  display: flex
+  align-items: center
+  justify-content: center
 
 .list-info-profile
   font-size: 15px

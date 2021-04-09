@@ -556,6 +556,13 @@
   .dropdown-menu
     top: calc(100% + 30px)
 
+  .product-slider-preview .slick-arrow
+    width: 40px
+    height: 40px
+    fill: #323232
+    padding: 12px
+    background: #f2f2f2
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
   header .logo
@@ -606,6 +613,9 @@
 
   .card
     min-height: auto
+    &:hover
+      .list-rating
+        display: flex
 
   .col-30, .blog-box-min
     width: 100%
@@ -687,6 +697,24 @@
   .brands-slider .slick-slide
     padding: 0 15px
 
+  .list-social li a
+    &:hover
+      background: transparent
+      .svg-icon
+        fill: #c3c3c3
+
+  .header-links__val
+    font-size: 11px
+    top: -8px
+    right: -9px
+
+  .product-slider-preview__img
+    max-width: 100px
+    width: 100%
+    margin: 0 auto
+
+
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 480px)
   .main-slider__content
@@ -710,6 +738,7 @@
   .sorting-wrapper
     .pagination
       order: 1
+      margin: 0 0 0 auto
 
   .col-25
     width: 100%
@@ -765,6 +794,18 @@
     &:nth-child(3)
       border: none
 
+  .table-basket tbody td
+    min-height: 79px
+    &:before
+      content: attr(data-table)
+      display: inline-block
+      width: 100%
+      text-align: center
+      line-height: 1
+
+  .table-basket .amount input
+    margin: 2px 0
+
   .product-basket__img
     width: 100px
     height: 120px
@@ -797,3 +838,6 @@
   .main-slider__content span
     letter-spacing: 1px
     font-size: 12px
+
+  header .phone, .header-links, .header-links-wrapper
+    margin: 0 0 0 15px
