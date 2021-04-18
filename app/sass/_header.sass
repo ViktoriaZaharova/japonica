@@ -75,6 +75,29 @@ header
 .header-links-wrapper
   position: relative
 
+.dropdown
+  position: relative
+  .dropdown-menu
+    top: 100%
+    width: 175px
+    left: 50%
+    transform: translate(-50%,0)
+    background: #e8e8e8
+    &__links
+      color: #323232
+      padding: 15px 0 10px 0
+      line-height: normal
+      &:hover
+        background: #323232
+        color: #fff
+  &:hover
+    .dropdown-menu
+      display: block
+      &__links
+        color: #323232
+        &:hover
+          color: #fff
+
 .dropdown-menu
   position: absolute
   width: 210px
