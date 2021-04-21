@@ -322,15 +322,49 @@
   height: 45px
   min-width: 45px
   padding: 14px
+  position: relative
   .svg-icon
     fill: #313537
   &:hover
     background: #313537
     .svg-icon
       fill: #fff
+  &.active
+    background: $red
+    .svg-icon
+      fill: #fff
+    .tooltip-box
+      display: block
 
 .basket-btn
   margin: 0 15px 0 0
+
+
+.tooltip-box
+  display: none
+  position: absolute
+  white-space: nowrap
+  background: #fff
+  z-index: 2
+  font-size: 15px
+  font-weight: 600
+  color: #444
+  padding: 15px 25px
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15)
+  left: 50%
+  transform: translate(-50%,0)
+  bottom: calc(100% + 10px)
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    transform: translate(-50%,0)
+    bottom: -10px
+    width: 0
+    height: 0
+    border-top: 10px solid #fff
+    border-right: 8px solid transparent
+    border-left: 8px solid transparent
 
 .favorite-btn:focus
   background: #e6292d

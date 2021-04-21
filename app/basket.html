@@ -197,7 +197,7 @@
 
           <a href="#" class="btn btn-black">ПРИМЕНИТЬ</a>
 
-          <a href="#" class="btn btn-grey btn-click">КУПИТЬ В 1 КЛИК</a>
+          <a href="#orderModal" class="btn btn-grey btn-click open_modal">КУПИТЬ В 1 КЛИК</a>
         </div>
 
         <div class="total-sum">
@@ -475,6 +475,42 @@
     </div>
   </div>
 </footer>
+
+
+
+<!--модалное окно-->
+<div class="modal__div" id="orderModal">
+  <div class="modal__wrapper">
+    <div class="modal__close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></div>
+
+    <h3>КУПИТЬ В 1 КЛИК</h3>
+
+    <form method="post" class="form form-modal">
+      <label>
+        <span class="input-title"><sup>*</sup> Имя</span>
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        <span class="input-title"><sup>*</sup> E-mail</span>
+        <input type="text" name="mail" required>
+      </label>
+      <label>
+        <span class="input-title"><sup>*</sup> Телефон</span>
+        <input type="text" name="phone" required>
+      </label>
+
+      <label class="checkbox">
+        <input class="checkbox-inp" type="checkbox" name="checkbox_form" checked>
+        <span class="checkbox-custom"></span>
+        <span class="label">Я согласен на обработку персональных данных</span>
+      </label>
+
+      <button type="submit" class="btn btn-black">ОФОРМИТЬ ЗАКАЗ</button>
+    </form>
+  </div>
+</div>
+<!-- Пoдлoжкa -->
+<div class="overlay"></div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
