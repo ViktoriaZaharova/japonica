@@ -220,6 +220,21 @@ i {
   font-style: italic;
   display: inline-block; }
 
+.page-politics h1 {
+  margin: 0 0 30px; }
+
+.page-politics a {
+  display: inline-block;
+  text-decoration: underline;
+  color: #323232;
+  font-weight: 500; }
+  .page-politics a:hover {
+    color: #e33434; }
+
+.page-politics ul {
+  padding: 0 0 0 20px;
+  list-style: disc; }
+
 .title-decor {
   position: relative;
   padding: 0 0 49px; }
