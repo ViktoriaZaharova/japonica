@@ -149,16 +149,16 @@ $('.product-slider-preview').slick({
 });
 
 $('.product-slider').slick({
-   slidesToShow: 1,
-   arrows: false,
-   fade: true,
+    slidesToShow: 1,
+    arrows: false,
+    fade: true,
     // infinite: false,
-   asNavFor: '.product-slider-preview'
+    asNavFor: '.product-slider-preview'
 });
 
 // mobile menu
 $('.btn-burger').on('click', function () {
-   $('.mobile-menu').fadeToggle();
+    $('.mobile-menu').fadeToggle();
 });
 $('.btn-close').on('click', function () {
     $('.mobile-menu').fadeOut();
@@ -181,7 +181,7 @@ $(function () {
 });
 
 // clone block
-if ($(".product-information .card-category, .product-information h1").length){
+if ($(".product-information .card-category, .product-information h1").length) {
     $('.product-information .card-category, .product-information h1').clone().appendTo('.title-mobile');
 }
 
@@ -193,7 +193,7 @@ $('.down').on("click", function () {
     $input.change();
     return false;
 });
-$('.up').on("click",function () {
+$('.up').on("click", function () {
     var $input = $(this).parent().find('input');
     $input.val(parseInt($input.val()) + 1);
     $input.change();
@@ -207,6 +207,8 @@ $(".form input, .form textarea").focus(function () {
         $(this).parent().removeClass("focus");
     }
 });
+
+$(".form input, .form textarea").attr("autocomplete", "off");
 
 // активная ссылка меню
 $('.menu-cabinet li a').each(function () {
@@ -230,7 +232,7 @@ $(function () {
         close = $('.modal__close, .overlay'),
         modal = $('.modal__div');
 
-    open_modal.on('click',function (event) {
+    open_modal.on('click', function (event) {
         event.preventDefault();
 
         modal.css('display', 'none').animate({
